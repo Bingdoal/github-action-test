@@ -1,0 +1,16 @@
+name: Run and Test
+on: push
+
+jobs:
+  TestAndRun:
+    name: Unit test then run
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Unit Test
+        run: |
+          apt update -y & apt upgrade -y
+          apt install node.js -y
+          npm run test
+          npm run prod
+
+
