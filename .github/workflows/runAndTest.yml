@@ -6,10 +6,10 @@ jobs:
     name: Unit test then run
     runs-on: ubuntu-18.04
     steps:
+      - uses: actions/checkout@v2
       - name: Unit Test
+        uses: actions/setup-node@v1
         run: |
-          apt update -y & apt upgrade -y
-          apt install node.js -y
           npm run test
           npm run prod
 
