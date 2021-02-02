@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       - name: Unit Test
-        uses: actions/setup-node@v1
-      - run: |
+        run: |
+          npm install
           npm run test
           npm run prod
 
