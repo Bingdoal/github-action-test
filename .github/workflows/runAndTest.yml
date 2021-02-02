@@ -8,11 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - name: Unit Test
+      - name: Unit Test and Build
         run: |
           npm install
           npm run test
           npm run build
-          npm run prod
 
 
