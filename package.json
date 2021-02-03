@@ -8,6 +8,7 @@
     "prod": "node ./build/index.js",
     "build": "tsc",
     "test": "jest --coverage"
+
   },
   "author": "",
   "license": "ISC",
