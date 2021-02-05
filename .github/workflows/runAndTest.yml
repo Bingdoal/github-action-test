@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v1
       - name: Unit Test and Build
         run: |
-          npm install
+          npm ci
           npm run test
           npm run build
 
